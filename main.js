@@ -1,5 +1,5 @@
 
-var storedNames = JSON.parse(localStorage.getItem("array"));
+var storedNames = JSON.parse(localStorage.getItem("array")) || [];
 
 storedNames.forEach(function (val, index, storedNames) {
     generateElement(val);
