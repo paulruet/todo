@@ -105,6 +105,8 @@ function edit(id){
 	
 }
 
+
+
 $('#edit_btn').click(function() {
 	var array=JSON.parse(localStorage.getItem("array"));
 	// console.log(array);
@@ -146,6 +148,7 @@ localStorage.setItem("array", JSON.stringify(array));
 });
 
 
+
 function del(id){
 	var storedNames=JSON.parse(localStorage.getItem("array"));
 	console.log(storedNames);
@@ -156,8 +159,9 @@ function del(id){
       			}
           });
 		 $("#" +id).remove();
+// console.log(storedNames[clickedtodoIndex]);
+        // Updating local storage
         storedNames.splice(clickedtodoIndex, 1);
 localStorage.setItem("array", JSON.stringify(storedNames));
 }
 
-,
