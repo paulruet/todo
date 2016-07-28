@@ -16,14 +16,13 @@
 
          <h3>To Do-List</h3>
       
-    </div>
-
-
-
+    <
     <div class="task-list" >
       <h3>Add a task</h3>
 
       <form id="todo-form">
+      <input type="hidden" class="clicked-index" value="">
+      <input type="hidden" class="id" value="">
         <input type="text" placeholder="Title" class="title"/>
 
         <textarea placeholder="Description" class="description"></textarea>
@@ -32,7 +31,7 @@
         <input type="text" placeholder="Tag" class="tag"/>
 
         <input type="button" class="btn btn-primary" value="Add Task" id="add_btn" /> <!-- onclick="todo.add();" -->
-
+        <input type="button" class="btn btn-primary" value="Edit Task" id="edit_btn" /> 
       </form>
 
       <input type="button" class="btn btn-primary" value="Clear Data" id="clear_btn"/> <!--onclick="todo.clear(); -->" 
